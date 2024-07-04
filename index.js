@@ -20,6 +20,16 @@ app.use(express.json());
 app.use(cors());
 await conectarDB();
 
+const corsOptions = {
+  origin: "https://hobby-pw2.netlify.app",
+};
+
+app.use(cors(corsOptions));
+
+app.get("/", (req, res) => {
+  res.send("API HOBBIES");
+});
+
 //middleware -> mostrar data requests
 app.use(mostrarDatosRequest);
 
