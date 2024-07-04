@@ -13,7 +13,6 @@ import { postUsuario } from "./controllers/postUsuario.js";
 import { loginUsuario } from "./controllers/loginUsuario.js";
 import { controlarSesion } from "./middlewares/controlarSesion.js";
 import { logoutUsuario } from "./controllers/logoutUsuario.js";
-import { logoutUsuario } from "./server.js";
 
 const app = express();
 const port = 3000;
